@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+:root {
+  --primary-color: #4a90e2;
+  --background-color: #f0f3f5;
+  --card-background: #ffffff;
+  --text-color: #333333;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.glow-text {
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.card {
+  background-color: var(--card-background);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.timer-container {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.oi-values {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+
+.results-container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.result-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--primary-color);
+  transition: transform 0.2s ease;
+}
+
+.result-item:hover {
+  transform: translateX(5px);
+}
+
