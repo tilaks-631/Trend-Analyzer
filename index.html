@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nifty 50 OI Analysis App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="glow-text">Nifty 50 Open Interest Analysis</h1>
+        </header>
+        <main>
+            <div class="card">
+                <div class="timer-container">
+                    <p>Next update in: <span id="countdown-timer">00:00</span></p>
+                </div>
+                <div class="oi-values">
+                    <p>Put OI: <span id="put-value">-</span></p>
+                    <p>Call OI: <span id="call-value">-</span></p>
+                </div>
+            </div>
+            <div class="results-container card">
+                <div id="results"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
